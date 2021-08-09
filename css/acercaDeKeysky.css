@@ -1,0 +1,314 @@
+/***************MENU********************/
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px 20px 20px 10px;
+  border-right: solid 2px #fff;
+  font-size: 40px;
+  color: #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgb(0,0,0,0.3);
+}
+
+.menu img {
+  height: 50px;
+  margin: 4px 0 5px 10px;
+  background: #fff;
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.menu ul {
+  background: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #277eb8;
+}
+
+.menu li {
+  border-right: solid 2px #fff;
+  position: relative;
+}
+
+.menu ul li:last-child {
+  border-right: 0;
+}
+.menu ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+}
+
+.menu li:hover {
+  background: rgb(0,0,0,0.3);
+}
+
+.drop ul {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  background: none;
+}
+
+.drop ul li {
+  border-right: 0;
+}
+
+.drop ul li a{
+  border-bottom: solid 2px #277eb8;
+  background: #e0d4d4;
+  color: #000;
+}
+.drop ul li a:hover{
+  background-color: #a2a0a2;
+  color: #fff;
+}
+
+.drop ul li:last-child a {
+  border-bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.drop:hover ul{
+  display: block;
+}
+.menu ul li {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*********************¿QUIENES SOMOS?**********************/
+#uno {
+  width: 100%;
+  position: relative;
+}
+
+#text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  border: solid 3px #fff;
+}
+
+#text {
+  font-size: 50px;
+}
+
+.who {
+  position: relative;
+  margin-bottom: -4px;
+  margin-top: -3px;
+}
+
+#dos {
+  width: 50%;
+  position: relative;
+}
+
+#tit1 {
+  color: #277eb8;
+  float: right;
+  font-size: 50px;
+  padding-right: 200px;
+  padding-top: 25px;
+}
+
+#somos {
+  border: #277eb8 2px solid;
+  float: right;
+  font-size: 18px;
+  margin-right: 110px;
+  margin-top: -330px;
+  padding: 15px;
+  text-align: justify;
+  width: 530px;
+}
+
+/*****************FRASE***********************/
+
+.frase {
+  background: #277eb8;
+  border: #fff 1px solid;
+  margin-top: -23px;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+}
+
+h2 {
+  border: #fff 2px solid;
+  color: #fff;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 20px;
+  margin-left: 40px;
+  text-align: center;
+  width: 90%;
+}
+
+/*************FUNDACION*******************/
+
+.contactos {
+  position: relative;
+  margin-bottom: -4px;
+  text-align: right;
+}
+
+#tres {
+  width: 50%;
+  padding-left: 50%;
+  position: relative;
+}
+
+
+#fund {
+  color: #277eb8;
+  font-size: 50px;
+  float: left;
+  margin-top: -440px;
+  margin-left: 260px;
+}
+
+#nosotros {
+  border: #277eb8 2px solid;
+  float: left;
+  font-size: 18px;
+  margin-left: 100px;
+  margin-top: -340px;
+  padding: 15px;
+  text-align: justify;
+  width: 530px;
+}
+
+/*************SEPARADOR******************/
+.divisor {
+  position: relative;
+  margin-bottom: -4px;
+  margin-top: -6px;
+  text-align: left;
+}
+
+#cuatro {
+  width: 100%;
+  position: relative;
+  background-color: pink;
+  margin-top: -6px;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-80%);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  border: solid 3px #fff;
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+/******************FINAL**********************/
+
+#tfinal {
+  border-bottom: #277eb8 4px solid;
+  color: #277eb8;
+  font-size: 50px;
+  margin-left: 15%;
+  text-align: center;
+  width: 70%;
+}
+
+#con {
+  border: #277eb8 1px solid;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 20%;
+  text-align: center;
+  width: 10%;
+  padding: 5px;
+}
+
+#correo1 {
+  font-size: 18px;
+  margin-left: -400px;
+  text-align: center;
+}
+
+#correo2 {
+  font-size: 18px;
+  margin-left: -430px;
+  text-align: center;
+}
+
+#correo3 {
+  font-size: 18px;
+  margin-left: -590px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/***************NEGRITAS***************/
+
+span {
+  font-weight: bolder;
+  font-size: 18px;
+  font-style: italic;
+}
+
+#name {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+/***************FOOTER********************/
+
+footer {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #277eb8;
+}
+
+footer p {
+  margin: 0;
+  padding: 50px;
+}

@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px 20px 20px 10px;
+  border-right: solid 2px #fff;
+  font-size: 40px;
+  color: #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgb(0,0,0,0.3);
+}
+
+.menu img {
+  height: 50px;
+  margin: 4px 0 5px 10px;
+  background: #fff;
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+.menu ul {
+  background: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #277eb8;
+}
+
+.menu li {
+  border-right: solid 2px #fff;
+  position: relative;
+}
+
+.menu ul li:last-child {
+  border-right: 0;
+}
+.menu ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+}
+
+.menu li:hover {
+  background: rgb(0,0,0,0.3);
+}
+
+.drop ul {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  background: none;
+}
+
+.drop ul li {
+  border-right: 0;
+}
+
+.drop ul li a{
+  border-bottom: solid 2px #277eb8;
+  background: #e0d4d4;
+  color: #000;
+}
+.drop ul li a:hover{
+  background-color: #a2a0a2;
+  color: #fff;
+}
+
+.drop ul li:last-child a {
+  border-bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.drop:hover ul{
+  display: block;
+}
+.menu ul li {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+@media (max-width:768px) {
+
+  header {
+    background-color: #277eb8;
+  }
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu ul li a{
+    border-top: solid 2px #fff;
+    padding: 20px;
+  }
+
+  .menu ul li:last-child {
+    border-right: solid 2px #fff;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .slider {
+    display: none;
+  }
+}
+
+#primeraSeccion {
+  width: 95%;
+  margin: 30px auto;
+  position: absolute;
+  display: block;
+  top: 59px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+#primeraSeccion h1 {
+  font-size: 30px;
+}
+
+.alojamiento {
+  height: 250px;
+  border-bottom: solid 1px #999;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 15px;
+}
+
+.alojamiento img {
+  height: 100%;
+  width: 450px;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.info {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+  padding: 0px 20px;
+  height: 100%;
+}
+
+.info p {
+  text-align: justify;
+  width: 80%;
+}
+
+.info h5 {
+  padding-left: 20px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.info h2 {
+  margin-top: 6px;
+}
+
+.info h3 {
+  margin-bottom: 0;
+  top: 30px;
+  vertical-align: bottom;
+  text-align: right;
+}
+
+.alojamiento:hover {
+  box-shadow: 5px 5px 5px 5px #999;
+  animation: escalar 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes escalar {
+  to {
+    transform: scale(1.01);
+  }
+  from {
+    transform: scale(1);
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}

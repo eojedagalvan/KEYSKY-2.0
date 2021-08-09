@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px 20px 20px 10px;
+  border-right: solid 2px #fff;
+  font-size: 40px;
+  color: #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgb(0,0,0,0.3);
+}
+
+.menu img {
+  height: 50px;
+  margin: 4px 0 5px 10px;
+  background: #fff;
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+.menu ul {
+  background: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #277eb8;
+}
+
+.menu li {
+  border-right: solid 2px #fff;
+  position: relative;
+}
+
+.menu ul li:last-child {
+  border-right: 0;
+}
+.menu ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+}
+
+.menu li:hover {
+  background: rgb(0,0,0,0.3);
+}
+
+.drop ul {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  background: none;
+}
+
+.drop ul li {
+  border-right: 0;
+}
+
+.drop ul li a{
+  border-bottom: solid 2px #277eb8;
+  background: #e0d4d4;
+  color: #000;
+}
+.drop ul li a:hover{
+  background-color: #a2a0a2;
+  color: #fff;
+}
+
+.drop ul li:last-child a {
+  border-bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.drop:hover ul{
+  display: block;
+}
+.menu ul li {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider ul {
+  padding: 0;
+  display: inline-flex;
+  width: 600%;
+  margin: 0;
+
+  animation: cambio 20s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+.slider li {
+  width: 100%;
+  display: inline-flex;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  border: solid 3px #fff;
+}
+
+.fondo {
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgb(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.slider h2 {
+  font-size: 38px;
+}
+
+.slider h1 {
+  font-size: 42px;
+}
+
+@media (max-width:768px) {
+
+  header {
+    background-color: #277eb8;
+  }
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu ul li a{
+    border-top: solid 2px #fff;
+    padding: 20px;
+  }
+
+  .menu ul li:last-child {
+    border-right: solid 2px #fff;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .slider {
+    display: none;
+  }
+}
+
+.busqueda {
+  position: relative;
+  margin-bottom: -4px;
+}
+.busqueda img {
+  width: 100%;
+}
+
+.busqueda form {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform: translateX(-15%) translateY(-20%);
+  background: #fff;
+  padding: 25px;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.busqueda h1 {
+  font-size: 30px;
+  margin-top: 0;
+  padding-top: 1px;
+  margin: 0;
+}
+
+.busqueda p {
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: lighter;
+}
+
+.opciones {
+  width: 100%;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.submit {
+  width: 100%;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  background: #277eb8;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+.lugares {
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.fecha {
+  padding: 8px;
+  width: 95%;
+  border-radius: 8px;
+  border: solid 1px #999;
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #277eb8;
+}
+
+footer p {
+  margin: 0;
+  padding: 50px;
+}

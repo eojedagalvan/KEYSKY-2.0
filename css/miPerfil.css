@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px 20px 20px 10px;
+  border-right: solid 2px #fff;
+  font-size: 40px;
+  color: #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgb(0,0,0,0.3);
+}
+
+.menu img {
+  height: 50px;
+  margin: 4px 0 5px 10px;
+  background: #fff;
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+.menu ul {
+  background: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #277eb8;
+}
+
+.menu li {
+  border-right: solid 2px #fff;
+  position: relative;
+}
+
+.menu ul li:last-child {
+  border-right: 0;
+}
+.menu ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+}
+
+.menu li:hover {
+  background: rgb(0,0,0,0.3);
+}
+
+.drop ul {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  background: none;
+}
+
+.drop ul li {
+  border-right: 0;
+}
+
+.drop ul li a{
+  border-bottom: solid 2px #277eb8;
+  background: #e0d4d4;
+  color: #000;
+}
+.drop ul li a:hover{
+  background-color: #a2a0a2;
+  color: #fff;
+}
+
+.drop ul li:last-child a {
+  border-bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.drop:hover ul{
+  display: block;
+}
+.menu ul li {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width:768px) {
+
+  header {
+    background-color: #277eb8;
+  }
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu ul li a{
+    border-top: solid 2px #fff;
+    padding: 20px;
+  }
+
+  .menu ul li:last-child {
+    border-right: solid 2px #fff;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .slider {
+    display: none;
+  }
+}
+
+.datos {
+  width: 100%;
+}
+
+
+.datos img {
+  width: 20%;
+  border-radius: 700px;
+  margin: 30px;
+  top: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.datos fieldset {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 100px;
+  padding-left: 70px;
+  margin-left: 40px;
+}
+
+.datos legend {
+  font-size: 30px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 17px;
+}
+
+.datos form {
+  padding: 10px 0px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto 0px auto;
+  color: #fff;
+  font-size: 20px;
+  background: #277eb8;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  color: red;
+  padding-left: 20px;
+}
+
+.error::before{
+  content: "*";
+}
+
+.izquierda {
+  margin-right: 0;
+  width: 30%;
+}
+
+.cancelar {
+background: red;
+}

@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/background.jpg");
+  background-size: cover;
+  background-color: #2ec4c9;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box {
+  width: 420px;
+  background: #fff;
+  color: #277eb8;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(50%, -50%);
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 70px 30px 20px 30px;
+  box-shadow: 2px 2px 2px #999;
+}
+
+.login-box .avatar {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  border-radius: 20px;
+  top: 0px;
+  left: 135px;
+}
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  position: relative;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #277eb8;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+.login-box-error input[type="email"],
+.login-box-error input[type="password"] {
+  border-color: red;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #277eb8;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+  display: block;
+}
+
+.login-box a:hover {
+  color: #000;
+}
+
+.smallImage {
+  margin: 20px;
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-520%, 435%);
+  border-radius: 10px;
+}
+
+.login-error {
+  color: #da3434;
+  margin: -10px 0 20px 0;
+}
+
+.login-error::before {
+  content: "*";
+}
+
+.hide {
+  display: none;
+}
