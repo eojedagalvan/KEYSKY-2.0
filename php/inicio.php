@@ -97,10 +97,12 @@
       <p>
         © 2021 KEYSKY, Inc. All rights reserved
         <a href="https://github.com/eojedagalvan/KEYSKY-2.0" target="_blank"> 
-          <img id="logos" src="../images/acercaDe/github.png" alt="">
+          <!--<img id="logos" src="../images/acercaDe/github.png" alt="">-->
+          <img id="logos" src="../images/acercaDe/git.png" alt="">
         </a>
-        <a href="mailto:keysky@gmail.com?subject=Contacto - KEYSKY">
-          <img id="logos2" src="../images/acercaDe/correo.png" alt="">
+        <a href="mailto:keyskycorporation@gmail.com?subject=Contacto - KEYSKY">
+          <!--<img id="logos2" src="../images/acercaDe/correo.png" alt="">-->
+          <img id="logos2" src="../images/acercaDe/correo2.png" alt="">
         </a>
       </p>
     </footer>
