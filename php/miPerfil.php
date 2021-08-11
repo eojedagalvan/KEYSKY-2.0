@@ -3,7 +3,7 @@
   session_start();
   error_reporting(0);
   $varsesion = $_SESSION['Nombre'];
-  $consultar = "Select * from Usuarios where correo = '$_SESSION[Correo]'";
+  $consultar = "Select * from usuarios where correo = '$_SESSION[Correo]'";
   $resultado =  mysqli_query($conexion, $consultar);
   $fila = mysqli_fetch_assoc($resultado);
   $nombre = $fila['Nombre'];
