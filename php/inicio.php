@@ -3,7 +3,7 @@
   session_start();
   error_reporting(0);
   $varsesion = $_SESSION['Nombre'];
-  $lugares = "select DISTINCT Ubicación from alojamientos";
+  $lugares = "select DISTINCT Ubicación from alojamientos ORDER BY Ubicación ASC";
 
   if($varsesion == null || $varsesion = ''){
     echo 'Usted no tiene autorización';
