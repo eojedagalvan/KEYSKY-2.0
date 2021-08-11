@@ -67,7 +67,7 @@ $fechaSalida = $_GET['salida'];
               <label for="numTarjeta">Número de tarjeta: </label>
               <input type="text" name="numTarjeta" value="" placeholder="    -  -  -  -  -  " id="numTarjeta" maxlength="16" required>
               <label for="CCV">CCV</label>
-              <input type="text" name="CCV" value="" placeholder="3 dígitos de seguridad" id="ccv" maxlength="3" required>
+              <input type="password" name="CCV" value="" placeholder="3 dígitos de seguridad" id="ccv" maxlength="3" required>
               <label for="fecha">Fecha de expiración: </label>
               <input type="date" name="" value="" id="expiracion" required>
             </div>
