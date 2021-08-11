@@ -94,7 +94,15 @@
       </form>
     </section>
     <footer>
-      <p>© 2021 KEYSKY, Inc. All rights reserved</p>
+      <p>
+        © 2021 KEYSKY, Inc. All rights reserved
+        <a href="https://github.com/eojedagalvan/KEYSKY-2.0" target="_blank"> 
+          <img id="logos" src="../images/acercaDe/github.png" alt="">
+        </a>
+        <a href="mailto:keysky@gmail.com?subject=Contacto - KEYSKY">
+          <img id="logos2" src="../images/acercaDe/correo.png" alt="">
+        </a>
+      </p>
     </footer>
   </body>
   <script src="../js/validarFecha.js">
