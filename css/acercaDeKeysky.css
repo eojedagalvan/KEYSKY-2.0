@@ -258,6 +258,7 @@ h2 {
 
 #con {
   border: #277eb8 1px solid;
+  border-radius: 5px;
   font-size: 20px;
   font-weight: bolder;
   margin-left: 20%;
@@ -311,4 +312,22 @@ footer {
 footer p {
   margin: 0;
   padding: 50px;
+}
+
+#logos{
+  width: 3.8%;
+  float: right;
+  margin-right: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-22%);
+}
+
+#logos2 {
+  width: 4%;
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-22%);
 }

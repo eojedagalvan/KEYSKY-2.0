@@ -88,20 +88,24 @@
       <p class="texto">Collect moments, not things.</p>
     </section> -->
 
-    <section class="final">
+    <!--<section class="final">
       <h1 id="tfinal">Contáctanos</h1>
       <ul>
-        <li id="con">Eduardo Ojeda</li>
-        <p id="correo1">Correo: ojedaeduardo2001@gmail.com</p>
-        <li id="con">Karen Núñez</li>
-        <p id="correo2">Correo: karennunez580@gmail.com</p>
         <li id="con">KEYSKY</li>
-        <p id="correo3"><a href="https://github.com/eojedagalvan/KEYSKY" target="_blank">GitHub: KEYSKY</a></p>
+        <p id="correo3"><a href="https://github.com/eojedagalvan/KEYSKY-2.0" target="_blank">GitHub: KEYSKY</a></p>
       </ul>
-    </section>
+    </section>-->
 
     <footer>
-      <p>© 2021 KEYSKY, Inc. All rights reserved</p>
+      <p>
+        © 2021 KEYSKY, Inc. All rights reserved
+        <a href="https://github.com/eojedagalvan/KEYSKY-2.0" target="_blank"> 
+          <img id="logos" src="../images/acercaDe/github.png" alt="">
+        </a>
+        <a href="mailto:keysky@gmail.com?subject=Contacto - KEYSKY">
+          <img id="logos2" src="../images/acercaDe/correo.png" alt="">
+        </a>
+      </p>
     </footer>
   </body>
 </html>
