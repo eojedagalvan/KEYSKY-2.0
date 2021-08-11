@@ -69,7 +69,7 @@ $fechaSalida = $_GET['salida'];
               <label for="CCV">CCV</label>
               <input type="password" name="CCV" value="" placeholder="3 dígitos de seguridad" id="ccv" maxlength="3" required>
               <label for="fecha">Fecha de expiración: </label>
-              <input type="date" name="" value="" id="expiracion" required>
+              <input type="date" name="" value="" id="expiracion" required min="<?= date('Y-m-d') ?>">
             </div>
           </div>
           <div class="submit">
@@ -78,7 +78,7 @@ $fechaSalida = $_GET['salida'];
           </form>
         </div>
         <div class="mensaje">
-          <h1>¡Estas a un paso de vivir una experiencia inolvidable!</h1>
+          <h1>¡Estás a un paso de vivir una experiencia inolvidable!</h1>
         </div>
       </section>
       <script src="../js/pagarRenta.js"></script>
