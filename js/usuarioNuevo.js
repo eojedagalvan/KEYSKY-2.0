@@ -47,6 +47,7 @@ loginForm.addEventListener("submit", function (evento) {
     .post("../php/validarUsuarioNuevo.php", formData)
     .then(function (respuesta) {
       // alert(respuesta.data);
+      document.location.href= '../php/enviarCorreo.php';
       document.location.href= '../php/inicio.php';
     })
     .catch(function () {
