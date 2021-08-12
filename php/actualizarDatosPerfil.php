@@ -13,11 +13,26 @@
   $clave = $conexion->real_escape_string($_POST["clave"]);
   $tel = $conexion->real_escape_string($_POST["tel"]);
 
-  $consultarId = "Select id from usuarios where nombre = '$varsesion'";
+  $consultarId = "Select Id_Usuario from usuarios where Correo = '$correo'";
   $resultado = mysqli_query($conexion, $consultarId);
-  $id =
+  $id = mysqli_fetch_assoc($resultado);
+  $idUsuario = $id['Id_Usuario'];
+
 
   $actualizar = "update usuarios set Nombre = '$nombre', Apellido = '$apellido', Teléfono = '$tel', Correo = '$correo', clave = '$clave' where correo = '$correo'";
   $resultado = mysqli_query($conexion, $actualizar);
   $_SESSION['Nombre'] = $nombre;
   $_SESSION['Apellido'] = $apellido;
+
+  if(isset($_FILES['foto'])){
+    $path = "../images/miPerfil/$idUsuario";
+    $nombre_base = $idUsuario . '.jpg';
+    mkdir($path);
+    $query = "update usuarios set picture_pic = '$path/$nombre_base' where Correo = '$correo'";
+    $resultado = mysqli_query($conexion, $query);
+  
+    $ruta = "$path/" . $nombre_base;
+    $subirarchivo = move_uploaded_file($_FILES["foto"]["tmp_name"], $ruta);
+
+  }
+

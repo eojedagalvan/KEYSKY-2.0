@@ -51,8 +51,9 @@ confirmar.addEventListener("click", function (evento) {
   const correo = document.querySelector("#correo").value;
   const clave = document.querySelector("#clave").value;
   const tel = document.querySelector("#tel").value;
+  const foto = document.querySelector("#fot").files;
 
-  if (!validarInformacion(nombre, apellido, correo, clave, tel)) return;
+  if (!validarInformacion(nombre, apellido, correo, clave, tel, foto)) return;
 
   const formData = new FormData();
   formData.append("correo", correo);
@@ -60,10 +61,11 @@ confirmar.addEventListener("click", function (evento) {
   formData.append("nombre", nombre);
   formData.append("apellido", apellido);
   formData.append("tel", tel);
+  formData.append("foto", foto[0]);
 
   axios
   .post("../php/actualizarDatosPerfil.php", formData)
-  .then(function () {
+  .then(function (data){
     document.location.href= '../php/miPerfil.php';
   })
   .catch(function () {
@@ -72,7 +74,7 @@ confirmar.addEventListener("click", function (evento) {
   });
 });
 
-function validarInformacion(nombre, apellido, correo, clave, tel) {
+function validarInformacion(nombre, apellido, correo, clave, tel, foto) {
   var expresion;
   expresion = /\w+@\w+\.+[a-z]/;
 
@@ -92,6 +94,20 @@ function validarInformacion(nombre, apellido, correo, clave, tel) {
       error.classList.remove("hide");
       error.innerText = "La contraseña debe de ser entre 8 - 16 caracteres";
       return false;
-  }
+  } else if (foto.length > 1 ) {
+      error.classList.remove("hide");
+      error.innerText = "Solo puedes subir una imagen";
+    return false;
+  } else if (foto.length == 1 ) {
+    if (foto[0].type != "image/png" && foto[0].type != "image/JPG" && foto[0].type != "image/jpg" && foto[0].type != "image/jpeg") {
+      error.classList.remove("hide");
+      error.innerText = "El tipo de archivo no está permitido";
+      return false;
+    } else {
+      error.classList.remove("hide");
+      error.innerText = "Imagen cargada correctamente";
+      return true;
+    }
+}
   return true;
 }

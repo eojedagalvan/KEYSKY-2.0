@@ -11,6 +11,11 @@
   $correo = $fila['Correo'];
   $clave = $fila['clave'];
   $tel = $fila['Teléfono'];
+  $path = $fila['picture_pic'];
+
+  if($path == ''){
+    $path = '../images/miPerfil/perfil.png';
+  }
 
   if($varsesion == null || $varsesion = ''){
     echo 'Usted no tiene autorización';
@@ -52,7 +57,7 @@
     <section class="datos">
       
       <div class="imagenes">
-        <img src="../images/miPerfil/perfil.png" alt="" id="imagenDefault">
+        <img src="<?= $path ?>" alt="" id="imagenDefault">
         <label for="fot" class="fot" id="label">
           <img src="../images/miPerfil/cam.png" alt="" class="camara hide" id="camara">
         </label>
