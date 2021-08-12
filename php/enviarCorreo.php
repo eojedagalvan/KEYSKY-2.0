@@ -66,7 +66,7 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
-    header("Location: ../inicio.php");
+    header("Location: inicio.php");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
