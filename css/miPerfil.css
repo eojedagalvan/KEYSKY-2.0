@@ -45,6 +45,7 @@ header label:hover {
   justify-content: flex-end;
   width: 100%;
   background-color: #277eb8;
+  margin-top: -5px;
 }
 
 .menu li {
@@ -187,7 +188,7 @@ a {
   top: 50px;
   position: relative;
   display: inline-block;
-} 
+}
 
 .imagenes {
   width: 30%;
@@ -197,7 +198,7 @@ a {
   position: relative;
   float: left;
   cursor: pointer;
-} 
+}
 
  #imagenDefault{
 
