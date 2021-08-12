@@ -160,7 +160,6 @@ a {
   top: 50px;
   position: relative;
   float: left;
-  cursor: pointer;
 }
 
 .datos #camara {
@@ -180,38 +179,6 @@ a {
   opacity:1.0;
   filter: alpha(opacity=100);
 }
-
-/* .fot img {
-  width: 20%;
-  border-radius: 700px;
-  margin: 30px;
-  top: 50px;
-  position: relative;
-  display: inline-block;
-}
-
-.imagenes {
-  width: 30%;
-  border-radius: 700px;
-  margin: 30x;
-  top: 50px;
-  position: relative;
-  float: left;
-  cursor: pointer;
-}
-
- #imagenDefault{
-
-}
-
-#camara {
-  position: absolute;
-  left: 50%;
-  width: 50%;
-  border-radius: 0px;
-  top: 50%;
-  transform: translate(50%,-50%);
-} */
 
 .datos fieldset {
   width: 60%;

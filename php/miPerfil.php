@@ -52,11 +52,11 @@
     <section class="datos">
       
       <div class="imagenes">
+        <img src="../images/miPerfil/perfil.png" alt="" id="imagenDefault">
         <label for="fot" class="fot" id="label">
-          <img src="../images/miPerfil/perfil.png" alt="" id="imagenDefault">
-          <img src="../images/miPerfil/cam.png" alt="" class="camara" id="camara">
+          <img src="../images/miPerfil/cam.png" alt="" class="camara hide" id="camara">
         </label>
-        <input id="fot" type="file" name="archivo" hidden accept=" .jpg, .png, .jpeg">
+        <input id="fot" type="file" name="archivo" hidden class="hide" accept=" .jpg, .png, .jpeg">
       </div>
 
         <fieldset>

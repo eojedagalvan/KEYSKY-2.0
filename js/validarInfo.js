@@ -7,6 +7,7 @@ const tel = document.getElementById('tel');
 const nombre = document.getElementById('nombre');
 const apellido = document.getElementById('apellido');
 const cancelar = document.getElementById('cancelar');
+const camara = document.getElementById('camara');
 
 window.addEventListener("load", function() {
   tel.addEventListener("keypress", soloNumeros, false);
@@ -40,6 +41,7 @@ boton.addEventListener("click", function (evento) {
   boton.classList.add('hide');
   confirmar.classList.remove('hide');
   cancelar.classList.remove('hide');
+  camara.classList.remove('hide');
 });
 
 confirmar.addEventListener("click", function (evento) {
