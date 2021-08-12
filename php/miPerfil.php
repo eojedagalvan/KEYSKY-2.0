@@ -50,7 +50,15 @@
       </nav>
     </header>
     <section class="datos">
-      <img src="../images/miPerfil/perfil.png" alt="">
+      
+      <div class="imagenes">
+        <label for="fot" class="fot" id="label">
+          <img src="../images/miPerfil/perfil.png" alt="" id="imagenDefault">
+          <img src="../images/miPerfil/cam.png" alt="" class="camara" id="camara">
+        </label>
+        <input id="fot" type="file" name="archivo" hidden accept=" .jpg, .png, .jpeg">
+      </div>
+
         <fieldset>
           <legend>Mis datos personales</legend>
           <form class=""  method="post" id="form-modificar">
