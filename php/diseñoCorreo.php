@@ -188,7 +188,7 @@ a[x-apple-data-detectors] {
                       <td align="left" class="es-m-txt-l" style="padding:0;Margin:0;padding-bottom:10px"><h3 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:bold;color:#333333">Calidad en los servicios</h3></td>
                      </tr>
                      <tr>
-                      <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px;text-align:justify">Nuestra mayor importancia son nuestros clientes, por eso KEYSKY es una empresa responsable y comprometida a asegurar una estancia agradable brindando servicios de calidad ante todos nuestros alojamientos</p></td>
+                      <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px;text-align:justify">Nuestra mayor importancia son nuestros clientes, por eso KEYSKY es una empresa responsable y comprometida a asegurar una estancia agradable brindando servicios de calidad ante todos nuestros alojamientos.</p></td>
                      </tr>
                    </table></td>
                  </tr>
