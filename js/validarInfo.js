@@ -104,10 +104,37 @@ function validarInformacion(nombre, apellido, correo, clave, tel, foto) {
       error.innerText = "El tipo de archivo no está permitido";
       return false;
     } else {
-      error.classList.remove("hide");
-      error.innerText = "Imagen cargada correctamente";
       return true;
     }
 }
   return true;
+}
+
+var inputElement = document.getElementById('fot');
+inputElement.addEventListener("change", handleFiles, false);
+const preview = document.getElementById('imagenDefault');
+
+function handleFiles() {
+  var fileList = this.files;
+  file = fileList[0];
+  const reader = new FileReader();
+
+  reader.addEventListener("load", function () {
+    // convert image file to base64 string
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+    var fileToLoad = file;
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) {
+      var srcData = fileLoadedEvent.target.result; // <--- data: base64
+      var newImage = document.createElement('img');
+      newImage.src = srcData;
+      var cssBG =  "url('"+srcData+"')";
+
+    }
+    fileReader.readAsDataURL(fileToLoad);
+  }
 }
