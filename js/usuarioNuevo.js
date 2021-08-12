@@ -48,7 +48,6 @@ loginForm.addEventListener("submit", function (evento) {
     .then(function (respuesta) {
       // alert(respuesta.data);
       document.location.href= '../php/enviarCorreo.php';
-      document.location.href= '../php/inicio.php';
     })
     .catch(function () {
       loginError.classList.remove("hide");
