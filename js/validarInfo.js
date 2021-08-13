@@ -33,7 +33,7 @@ function soloLetras(e){
 boton.addEventListener("click", function (evento) {
   evento.preventDefault();
   for (i = 0; i < campos.length; i++) {
-    if (i == 2){
+    if (i == 2 || i == 3){
       continue;
     }
     campos[i].disabled = false;
@@ -49,15 +49,16 @@ confirmar.addEventListener("click", function (evento) {
   const nombre = document.querySelector("#nombre").value;
   const apellido = document.querySelector("#apellido").value;
   const correo = document.querySelector("#correo").value;
-  const clave = document.querySelector("#clave").value;
+  /* const clave = document.querySelector("#clave").value; */
   const tel = document.querySelector("#tel").value;
   const foto = document.querySelector("#fot").files;
 
-  if (!validarInformacion(nombre, apellido, correo, clave, tel, foto)) return;
+  /* if (!validarInformacion(nombre, apellido, correo, clave, tel, foto)) return; */
+  if (!validarInformacion(nombre, apellido, correo, tel, foto)) return;
 
   const formData = new FormData();
   formData.append("correo", correo);
-  formData.append("clave", clave);
+  /* formData.append("clave", clave); */
   formData.append("nombre", nombre);
   formData.append("apellido", apellido);
   formData.append("tel", tel);
@@ -74,7 +75,8 @@ confirmar.addEventListener("click", function (evento) {
   });
 });
 
-function validarInformacion(nombre, apellido, correo, clave, tel, foto) {
+/* function validarInformacion(nombre, apellido, correo, clave, tel, foto) { */
+function validarInformacion(nombre, apellido, correo, tel, foto) {
   var expresion;
   expresion = /\w+@\w+\.+[a-z]/;
 
@@ -90,11 +92,11 @@ function validarInformacion(nombre, apellido, correo, clave, tel, foto) {
       error.classList.remove("hide");
       error.innerText = "El correo no es válido";
       return false;
-  } else if (clave.length < 8 || clave.length > 16) {
+  } /* else if (clave.length < 8 || clave.length > 16) {
       error.classList.remove("hide");
       error.innerText = "La contraseña debe de ser entre 8 - 16 caracteres";
       return false;
-  } else if (foto.length > 1 ) {
+  } */ else if (foto.length > 1 ) {
       error.classList.remove("hide");
       error.innerText = "Solo puedes subir una imagen";
     return false;
@@ -104,37 +106,10 @@ function validarInformacion(nombre, apellido, correo, clave, tel, foto) {
       error.innerText = "El tipo de archivo no está permitido";
       return false;
     } else {
+      error.classList.remove("hide");
+      error.innerText = "Imagen cargada correctamente";
       return true;
     }
 }
   return true;
-}
-
-var inputElement = document.getElementById('fot');
-inputElement.addEventListener("change", handleFiles, false);
-const preview = document.getElementById('imagenDefault');
-
-function handleFiles() {
-  var fileList = this.files;
-  file = fileList[0];
-  const reader = new FileReader();
-
-  reader.addEventListener("load", function () {
-    // convert image file to base64 string
-    preview.src = reader.result;
-  }, false);
-
-  if (file) {
-    reader.readAsDataURL(file);
-    var fileToLoad = file;
-    var fileReader = new FileReader();
-    fileReader.onload = function(fileLoadedEvent) {
-      var srcData = fileLoadedEvent.target.result; // <--- data: base64
-      var newImage = document.createElement('img');
-      newImage.src = srcData;
-      var cssBG =  "url('"+srcData+"')";
-
-    }
-    fileReader.readAsDataURL(fileToLoad);
-  }
 }

@@ -10,7 +10,7 @@
   $nombre = $conexion->real_escape_string($_POST["nombre"]);
   $apellido = $conexion->real_escape_string($_POST["apellido"]);
   $correo = $conexion->real_escape_string($_POST["correo"]);
-  $clave = $conexion->real_escape_string($_POST["clave"]);
+/*   $clave = $conexion->real_escape_string($_POST["clave"]); */
   $tel = $conexion->real_escape_string($_POST["tel"]);
 
   $consultarId = "Select Id_Usuario from usuarios where Correo = '$correo'";
@@ -18,8 +18,8 @@
   $id = mysqli_fetch_assoc($resultado);
   $idUsuario = $id['Id_Usuario'];
 
-
-  $actualizar = "update usuarios set Nombre = '$nombre', Apellido = '$apellido', Teléfono = '$tel', Correo = '$correo', clave = '$clave' where correo = '$correo'";
+/*   $actualizar = "update usuarios set Nombre = '$nombre', Apellido = '$apellido', Teléfono = '$tel', Correo = '$correo', clave = '$clave' where correo = '$correo'";*/  
+  $actualizar = "update usuarios set Nombre = '$nombre', Apellido = '$apellido', Teléfono = '$tel', Correo = '$correo' where correo = '$correo'";
   $resultado = mysqli_query($conexion, $actualizar);
   $_SESSION['Nombre'] = $nombre;
   $_SESSION['Apellido'] = $apellido;

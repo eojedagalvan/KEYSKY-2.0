@@ -74,7 +74,7 @@
           <label for="correo">Correo: </label>
           <input type="email" name="correo" class="campo" id="correo" value="<?php echo $correo ?>" required disabled>
           <label for="clave">Contraseña: </label>
-          <input type="password" name="password" class="campo" id="clave" value="<?php echo $clave ?>" required disabled>
+          <input type="password" name="password" class="campo" id="clave" value="contraseña" required disabled>
           <label for="tel">Teléfono: </label>
           <input type="tel" name="telefono" class="campo" id="tel" value="<?php echo $tel ?>" required disabled>
           <p class="error hide"></p>
