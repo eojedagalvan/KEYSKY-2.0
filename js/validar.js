@@ -15,7 +15,6 @@ loginForm.addEventListener("submit", function (evento) {
   axios
     .post("php/validarUsuario.php", formData)
     .then(function (respuesta) {
-      // alert(respuesta.data);
       document.location.href= '../php/inicio.php';
     })
     .catch(function () {
