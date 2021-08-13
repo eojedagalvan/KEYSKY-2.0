@@ -7,6 +7,28 @@ $varsesion = $_SESSION['Nombre'];
 if($varsesion == null || $varsesion = ''){
   echo 'Usted no tiene autorización';
   die();
+
+}
+
+$idAlojamiento = $_GET["idAlojamiento"];
+$fechaLlegada = $_GET["fechaLlegada"];
+$fechaSalida = $_GET["fechaSalida"];
+$nombreAlojamiento = $_GET['nombreAlojamiento'];
+$ubicacion = $_GET['ubicacion'];
+$costo = $_GET['costo'];
+$nombreAnfi = $_GET['nombreAnfi'];
+$apellidoAnfi = $_GET['apellidoAnfi'];
+$telAnfi = $_GET['telAnfi'];
+$noches = $_GET['noches'];
+$correoAnfi = $_GET['correoAnfi'];
+
+
+if(isset($_GET['noches'])){
+  $templateCorreo = 'diseñoCorreoReservacion.php';
+  $subject = 'Confirmación de tu reservación';
+} else {
+  $subject = '¡KEYSKY te da la bienvenida!';
+  $templateCorreo = 'diseñoCorreo.php';
 }
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -49,12 +71,12 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = '¡KEYSKY te da la bienvenida!';
-    $mail->msgHTML(file_get_contents('diseñoCorreo.php'));
+    $mail->Subject = $subject;
+    $mail->msgHTML(file_get_contents('diseñoCorreoReservacion?idAlojamiento=$idAlojamiento&fechaLlegada=$fechaLlegada&fechaSalida=$fechaSalida&nombreAlojamiento=$nombreAlojamiento&ubicacion=$ubicacion&costo=$costo&nombreAnfi=$nombreAnfi&apellidoAnfi=$apellidoAnfi&telAnfi=$telAnfi&noches=$noches&correoAnfi=$correoAnfi'));
 
     //Enviar correos con extensión php
     ob_start();
-    include "diseñoCorreo.php";
+    include $templateCorreo;
     $message = ob_get_clean();
     $mail->msgHTML($message);
 
@@ -66,7 +88,14 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
-    header("Location: inicio.php");
+    if(isset($_GET['noches'])){
+      header('Location: misReservaciones.php');
+    } else {
+      header("Location: inicio.php");
+
+    }
+    //header("Location: inicio.php");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+?>

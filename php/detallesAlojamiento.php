@@ -132,7 +132,7 @@
               <h4>TOTAL: </h4>
               <p>$<?php echo $Total ?> / MXN</p>
             </div>
-            <a href="pagarRenta.php?id=<?php echo $alojamiento["Id_Alojamiento"] ?>&llegada= <?php echo $fechaLlegada ?>&salida= <?php echo $fechaSalida ?>"><button type="button" name="button" class="submit">¡Reservar!</button></a>
+            <a href="pagarRenta.php?id=<?php echo $alojamiento["Id_Alojamiento"]?>&llegada=<?php echo $fechaLlegada ?>&salida=<?php echo $fechaSalida ?>&nombreAlojamiento=<?php echo $alojamiento["Nombre"] ?>&ubicacion=<?php echo $alojamiento["Ubicación"] ?>&costo=<?php echo $alojamiento["Costo"]?>&nombreAnfi=<?php echo $anfitrion["Nombre"]?>&apellidoAnfi=<?php echo $anfitrion["Apellido"]?>&telAnfi=<?php echo $anfitrion["Teléfono"]?>&noches=<?php echo $Noches ?>&correoAnfi=<?php echo $anfitrion["Correo"] ?>"><button type="button" name="button" class="submit">¡Reservar!</button></a>
           </form>
         </div>
     </article>

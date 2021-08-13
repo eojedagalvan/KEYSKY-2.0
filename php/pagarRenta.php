@@ -12,6 +12,14 @@
 $idAlojamiento = $_GET['id'];
 $fechaLlegada = $_GET['llegada'];
 $fechaSalida = $_GET['salida'];
+$nombreAlojamiento = $_GET['nombreAlojamiento'];
+$ubicacion = $_GET['ubicacion'];
+$costo = $_GET['costo'];
+$nombreAnfi = $_GET['nombreAnfi'];
+$apellidoAnfi = $_GET['apellidoAnfi'];
+$telAnfi = $_GET['telAnfi'];
+$noches = $_GET['noches'];
+$correoAnfi = $_GET['correoAnfi'];
   ?>
 
   <!DOCTYPE html>
@@ -52,6 +60,14 @@ $fechaSalida = $_GET['salida'];
             <input type="text" name="id" value="<?php echo $idAlojamiento ?>" style="display:none;">
             <input type="text" name="llegada" value="<?php echo $fechaLlegada ?>" style="display:none;">
             <input type="text" name="salida" value="<?php echo $fechaSalida ?>" style="display:none;">
+            <input type="text" name="nombreAlojamiento" value="<?php echo $nombreAlojamiento ?>" style="display:none;">
+            <input type="text" name="ubicacion" value="<?php echo $ubicacion ?>" style="display:none;">
+            <input type="text" name="costo" value="<?php echo $costo ?>" style="display:none;">
+            <input type="text" name="nombreAnfi" value="<?php echo $nombreAnfi ?>" style="display:none;">
+            <input type="text" name="apellidoAnfi" value="<?php echo $apellidoAnfi ?>" style="display:none;">
+            <input type="text" name="telAnfi" value="<?php echo $telAnfi ?>" style="display:none;">
+            <input type="text" name="noches" value="<?php echo $noches ?>" style="display:none;">
+            <input type="text" name="correoAnfi" value="<?php echo $correoAnfi ?>" style="display:none;">
             <div class="seccion">
             <div class="datosPersonales">
               <label for="nombre">Nombre: </label>
