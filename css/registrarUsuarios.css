@@ -1,17 +1,14 @@
-
-body
-{
+body {
   margin: 0;
   padding: 0;
-  background: url(../IMAGES/background.jpg);
+  background: url(../images/background.jpg);
   background-size: cover;
   background-color: #2ec4c9;
   font-family: sans-serif;
   height: 100vh;
 }
 
-.registros
-{
+.registros {
   width: 520px;
   background: #fff;
   color: #277eb8;
@@ -23,13 +20,11 @@ body
   box-shadow: 2px 2px 2px #999;
 }
 
-.registros form
-{
+.registros form {
   padding-left: 60px;
 }
 
-.registros .LOGO
-{
+.registros .LOGO {
   width: 150px;
   height: auto;
   position: absolute;
@@ -38,10 +33,9 @@ body
   left: 185px;
 }
 
-h1
-{
+h1 {
   background: #277eb8;
-  color:#fff;
+  color: #fff;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -52,8 +46,7 @@ h1
   margin-bottom: 20px;
 }
 
-label
-{
+label {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -61,14 +54,12 @@ label
   font-size: 15px;
 }
 
-#conf
-{
+#conf {
   font-style: italic;
-  font-size:15px;
+  font-size: 15px;
 }
 
-input
-{
+input {
   border: none;
   border-bottom: 1px solid #277eb8;
   background: transparent;
@@ -80,8 +71,7 @@ input
   margin-bottom: 20px;
 }
 
-input[type = "submit"]
-{
+input[type="submit"] {
   border: none;
   outline: none;
   height: 40px;
@@ -89,7 +79,7 @@ input[type = "submit"]
   color: #fff;
   font-weight: bold;
   font-size: 18px;
-  border-radius: 20px
+  border-radius: 20px;
 }
 
 .login-error {
