@@ -43,7 +43,7 @@ if($varsesion != null){
         />
         <input type="submit" value="Ingresar" />
       </form>
-      <a href="html/registrarUSuarios.html">Aún no tienes cuenta?</a>
+      <a href="html/registrarUsuarios.html">Aún no tienes cuenta?</a>
       <a href="#">Recuperar Contraseña</a>
     </div>
   </body>

@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>KEYSKY: CREAR CUENTA</title>
-    <link rel="stylesheet" href="../css/registrarUsuarios.css">
-    <link rel="shortcut icon" href="../images/KEYSKY.jpg"/>
+    <link rel="stylesheet" href="../css/registrarUsuarios.css" />
+    <link rel="shortcut icon" href="../images/KEYSKY.jpg" />
   </head>
   <body>
     <div class="registros">
-    <img  class="LOGO" src="../IMAGES/KEYSKY 4.jpg" alt="Logo">
-    <h1>CREA TU CUENTA</h1>
-    <form id="uno" method="post">
-      <label>Nombre</label>
-      <input type="text" id="nom" name="nombre" placeholder="Ingresa tu nombre" required>
-      <br/>
-      <label>Apellidos</label>
-      <input type="text" id="ape" name="apellido" placeholder="Ingresa tus apellidos" required>
-      <br/>
-      <label>Teléfono</label>
-      <input type="tel" id="telefono" name="telefono" placeholder="00-00-00-00-00" required>
-      <br/>
+      <img class="LOGO" src="../images/KEYSKY 4.jpg" alt="Logo" />
+      <h1>CREA TU CUENTA</h1>
+      <form id="uno" method="post">
+        <label>Nombre</label>
+        <input
+          type="text"
+          id="nom"
+          name="nombre"
+          placeholder="Ingresa tu nombre"
+          required
+        />
+        <br />
+        <label>Apellidos</label>
+        <input
+          type="text"
+          id="ape"
+          name="apellido"
+          placeholder="Ingresa tus apellidos"
+          required
+        />
+        <br />
+        <label>Teléfono</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          placeholder="00-00-00-00-00"
+          required
+        />
+        <br />
 
-      <label>Correo</label>
-      <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required>
-      <br/>
+        <label>Correo</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="ejemplo@gmail.com"
+          required
+        />
+        <br />
 
-      <label>Contraseña</label>
-      <input type="password" id="contra" name="contra" placeholder="Ingresa tu contraseña" required>
-      <br/>
+        <label>Contraseña</label>
+        <input
+          type="password"
+          id="contra"
+          name="contra"
+          placeholder="Ingresa tu contraseña"
+          required
+        />
+        <br />
 
-      <label id="conf">Confirma la contraseña</label>
-      <input type="password" id="contra2" name="contra" placeholder="Reafirma tu contraseña" required>
-      <br/>
+        <label id="conf">Confirma la contraseña</label>
+        <input
+          type="password"
+          id="contra2"
+          name="contra"
+          placeholder="Reafirma tu contraseña"
+          required
+        />
+        <br />
 
-      <p class="login-error hide"></p>
+        <p class="login-error hide"></p>
 
-      <input type="submit" id="boton" value="Enviar">
-
-    </form>
-    <a href="../index.php"> ◀ Atrás </a>
-    <a href="../index.php" id="cuenta"> Ya tienes cuenta? Inicia sesión </a>
+        <input type="submit" id="boton" value="Enviar" />
+      </form>
+      <a href="../index.php"> ◀ Atrás </a>
+      <a href="../index.php" id="cuenta"> Ya tienes cuenta? Inicia sesión </a>
     </div>
   </body>
   <script src="../js/usuarioNuevo.js"></script>

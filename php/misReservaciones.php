@@ -68,7 +68,7 @@
         <div class="noRentas">
             <h1>No tienes reservaciones activas</h1>
             <h3>¡Descubre todos los lugares que tenemos para ti!</h3>
-            <a href="inicio.php"><button type="button" name="button"> + Hacer una reservación</button></a>
+            <a href="./inicio.php"><button type="button" name="button"> + Hacer una reservación</button></a>
         </div>
     <?php }?>
     </section>
