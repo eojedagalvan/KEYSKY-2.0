@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", function (evento) {
   axios
     .post("php/validarUsuario.php", formData)
     .then(function (respuesta) {
-      document.location.href= '../php/inicio.php';
+      document.location.href = "../php/inicio.php";
     })
     .catch(function () {
       loginError.classList.remove("hide");

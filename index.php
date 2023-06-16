@@ -4,7 +4,7 @@ error_reporting(0);
 $varsesion = $_SESSION['Nombre'];
 
 if($varsesion != null){
-  header("Location: ../php/inicio.php");
+  header("Location: ./php/inicio.php");
   die();
 }
 ?>
